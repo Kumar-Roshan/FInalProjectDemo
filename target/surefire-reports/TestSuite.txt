@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 36.586 s <<< FAILURE! - in TestSuite
+testSearch(org.example.YouTubeSearchResultsPageTest)  Time elapsed: 0.188 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+Element <g id="search"> is not reachable by keyboard
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [48905ed5-d055-497e-b428-a16bde6da9fd, sendKeysToElement {id=b443ea73-48ca-44d8-90e9-28508d84b93c, value=[Ljava.lang.CharSequence;@47c64cfe}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:43849, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13220, moz:profile: C:\Users\kumar\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:43849/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (48905ed5-d055-497e-b428-a16bde6da9fd)] -> xpath: //*[@id="search"]]
+Session ID: 48905ed5-d055-497e-b428-a16bde6da9fd
+	at org.example.YouTubeSearchResultsPageTest.testSearch(YouTubeSearchResultsPageTest.java:16)
+
+testAddToPlaylist(org.example.YouTubeVideoPlayerPageTest)  Time elapsed: 2.015 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //*[@id="button-shape"]/button/yt-touch-feedback-shape/div/div[2]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [48905ed5-d055-497e-b428-a16bde6da9fd, findElement {using=xpath, value=//*[@id="button-shape"]/button/yt-touch-feedback-shape/div/div[2]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:43849, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13220, moz:profile: C:\Users\kumar\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:43849/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 48905ed5-d055-497e-b428-a16bde6da9fd
+	at org.example.YouTubeVideoPlayerPageTest.testAddToPlaylist(YouTubeVideoPlayerPageTest.java:28)
+
+testRenamePlaylist(org.example.RenamePlaylistPageTest)  Time elapsed: 2.188 s  <<< FAILURE!
+org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: 
+(-18, 448) is out of bounds of viewport width (1536) and height (778)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [48905ed5-d055-497e-b428-a16bde6da9fd, actions {actions=[org.openqa.selenium.interactions.Sequence@3028e50e]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.2, moz:accessibilityChecks: false, moz:buildID: 20230424110519, moz:debuggerAddress: 127.0.0.1:43849, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13220, moz:profile: C:\Users\kumar\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:43849/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 48905ed5-d055-497e-b428-a16bde6da9fd
+	at org.example.RenamePlaylistPageTest.testRenamePlaylist(RenamePlaylistPageTest.java:22)
+

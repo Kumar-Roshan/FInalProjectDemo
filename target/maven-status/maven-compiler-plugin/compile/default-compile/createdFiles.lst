@@ -1,0 +1,4 @@
+org\example\YouTubeHomePage.class
+org\example\YouTubeVideoPlayerPage.class
+org\example\YouTubeHomePage$YouTubeLoginPage.class
+org\example\YouTubeSearchResultsPage.class
